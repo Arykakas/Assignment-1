@@ -81,7 +81,7 @@ const InputForm = () => {
   const textChange = async (event) => {
     event.preventDefault();
     const name = event.target.value;
-    if (name.length > 3) {
+    if (name.length > 1) {
       setTimeout(async () => {
         const age = await fetchAge(name);
         const gender = await fetchGender(name);
